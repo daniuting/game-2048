@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css.css" />
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <p class="summary">
+        玩法说明：<br/>
+        1.用键盘上下左右键控制数字走向<br/>
+        2.当点击了一个方向时，格子中的数字会全部往那个方向移动，直到不能再移动，如果有相同的数字则会合并<br/>
+        3.当格子中不再有可移动和可合并的数字时，游戏结束
+    </p>
+	<div class="wrap">
+		<div id = "scroe">
+			<p class="scroeNum">0</p>
+		</div>
+		<div id="con">
+            <div><img value="0" src="img/cube_0.png" /></div>
+            <div><img value="0" src="img/cube_0.png" /></div>
+            <div><img value="0" src="img/cube_0.png" /></div>
+            <div><img value="0" src="img/cube_0.png" /></div>
+
+            <div><img value="0" src="img/cube_0.png" /></div>
+            <div><img value="0" src="img/cube_0.png" /></div>
+            <div><img value="0" src="img/cube_0.png" /></div>
+            <div><img value="0" src="img/cube_0.png" /></div>
+
+            <div><img value="0" src="img/cube_0.png" /></div>
+            <div><img value="0" src="img/cube_0.png" /></div>
+            <div><img value="0" src="img/cube_0.png" /></div>
+            <div><img value="0" src="img/cube_0.png" /></div>
+
+            <div><img value="0" src="img/cube_0.png" /></div>
+            <div><img value="0" src="img/cube_0.png" /></div>
+            <div><img value="0" src="img/cube_0.png" /></div>
+            <div><img value="0" src="img/cube_0.png" /></div>
+		</div>
+		<div id="mask"></div>
+		<div id="jump">
+			<p>恭喜你已经达到2048</p>
+			<input type="button" value="继续挑战">
+		</div>
+	</div>
+</body>
+</html>
