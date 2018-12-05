@@ -40,6 +40,10 @@ window.onload = function () {
 
             let result = calc(value);
 
+            if (result.find(item => item.value === 2048)) {
+                alert('你赢了')
+            }
+
             let attr,count,isReverse;
             if (type === 'left' || type === 'right') {
                 attr = 'left';
@@ -116,13 +120,14 @@ window.onload = function () {
                 continue;
             }
 
-            for (var j = 0; j <= i; j++) {
-                if (arr[j] === 0 || arr[j] === arr[i]) {
-                    break;
+            let j = 0;
+            for (var m = 0; m < i; m++) {
+                if (arr[m] !== 0 && arr[m] !== arr[i]) {
+                   j = m + 1;
                 }
             }
 
-            if (j < i) {
+            if (j !== i) {
                 arr[j] = arr[j] === 0 ? arr[i] : arr[i] + arr[j];
                 arr[i] = 0;
                 moveArr.push({
